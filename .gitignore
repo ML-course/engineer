@@ -1,6 +1,7 @@
 assignments-old/*
 .ipynb_checkpoints/*
-*/.ipynb_checkpoints/*
+*/.ipynb_checkpoints/
+*/__pycache__/*
 assign/*
 notebooks/.ipynb_checkpoints/*
 notebooks/__pycache__/*

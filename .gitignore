@@ -12,3 +12,4 @@ notebooks/mglearn/.ipynb_checkpoints/*
 templates/.ipynb_checkpoints/*
 */.DS_Store
 .DS_Store
+data/models/cats_and_dogs_small_3c.h5

@@ -27,6 +27,9 @@
       .lead {
         margin-top: 40px;
       }
+      .video {
+        visibility: hidden;
+      }
     </style>
   </head>
 
@@ -89,14 +92,22 @@
                 <span>05 - Neural Networks</span>
               </li>
               <li
-                class="list-group-item d-flex justify-content-between showlinks"
+                class="list-group-item d-flex justify-content-between showlinksvideo"
               >
                 <span>06 - Convolutional Neural Networks</span>
+                <div class="video">D-7JgAUlxb4</div>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between showpdflink"
               >
                 <span>07 - Automatic Machine Learning</span>
+                <div class="video">V3p7jRxudWk</div>
+              </li>
+              <li
+                class="list-group-item d-flex justify-content-between showpdflink"
+              >
+                <span>08 - ML in practice (Guest Lecture)</span>
+                <div class="video">MseTm6fcTJU</div>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between showlinks"
@@ -276,6 +287,31 @@
               ".pdf'\")>PDF</button></div>"
           );
         });
+        $(".showlinksvideo").each(function() {
+          $(this).append(
+            "<div class='btn-group snug' role='group'><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href='https:\/\/github.com\/ML-course\/engineer\/blob\/master\/notebooks\/" +
+              $(this)
+                .find("span")
+                .html() +
+              ".ipynb'\")>View</button><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href='notebooks\/" +
+              $(this)
+                .find("span")
+                .html() +
+              ".ipynb'\")>Notebook</button><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href='slides_html\/" +
+              $(this)
+                .find("span")
+                .html() +
+              ".slides.html'\")>HTML</button><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href='slides_pdf\/" +
+              $(this)
+                .find("span")
+                .html() +
+              ".pdf'\")>PDF</button><button type='button' class='btn btn-outline-primary' onclick=\"window.open('https:\/\/www.youtube.com/watch?v=" +
+              $(this)
+                .find(".video")
+                .html() +
+              "','_blank')\">Video</button></div>"
+          );
+        });
         $(".showlablink").each(function() {
           $(this).append(
             "<div class='btn-group snug' role='group'><button type='button' class='btn btn-outline-primary' onclick=\"window.location.href='https:\/\/github.com\/ML-course\/engineer\/blob\/master\/labs\/" +
@@ -315,7 +351,11 @@
             $(this)
               .find("span")
               .html() +
-            ".pdf'\")>PDF</button></div>"
+            ".pdf'\")>PDF</button><button type='button' class='btn btn-outline-primary' onclick=\"window.open('https:\/\/www.youtube.com/watch?v=" +
+            $(this)
+              .find(".video")
+              .html() +
+            "','_blank')\">Video</button></div>"
         );
       });
     </script>

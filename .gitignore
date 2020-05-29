@@ -3,6 +3,7 @@ assignments-old/*
 */.ipynb_checkpoints/
 */__pycache__/*
 assign/*
+A3/*
 notebooks/.ipynb_checkpoints/*
 notebooks/__pycache__/*
 notebooks/mglearn/__pycache__/*

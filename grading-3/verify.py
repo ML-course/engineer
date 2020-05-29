@@ -7,6 +7,7 @@ from traitlets.config import Config
 import warnings
 import time
 import tqdm
+import shutil
 import traceback
 from shutil import copyfile, move
 warnings.filterwarnings('ignore')

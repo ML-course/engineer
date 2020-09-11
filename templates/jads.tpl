@@ -47,8 +47,12 @@
   flex-direction: inherit !important;
 }
 .print-pdf .reveal.slide .slides > section, .print-pdf .reveal.slide .slides > section > section {
-  min-height: 770px !important;
+  min-height: 780px !important;
   position: relative !important;
+}
+
+.reveal section img {
+  margin: 0 !important;
 }
 </style>
 
